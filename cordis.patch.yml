@@ -1,0 +1,14 @@
+# Bundle layer for the Tencent Yuanbao search provider.
+#
+# The row is inserted beside the `web` service supplied by the base layer. The
+# provider registers under the stable id `yuanbao`; the web service selects it
+# automatically when it is the only usable search backend, or explicitly when a
+# later patch layer sets `searchProvider: yuanbao` on the `web` row.
+#
+# The API key resolves per search through ctx.credentials when that service is
+# mounted, otherwise from $TENCENTCLOUD_WSA_APIKEY in the launch environment.
+- insert:
+    - id: web-search-yuanbao
+      name: 'dsh-web-search-yuanbao'
+      config:
+        apiKeyEnv: TENCENTCLOUD_WSA_APIKEY
