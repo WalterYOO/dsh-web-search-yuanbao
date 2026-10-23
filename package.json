@@ -1,8 +1,24 @@
 {
   "name": "dsh-web-search-yuanbao",
   "description": "Tencent Yuanbao Search-backed search provider for the DeepSeek Harness web capability seam (ctx.web)",
-  "version": "0.2.1-rc.2",
+  "version": "0.2.1-rc.3",
   "type": "module",
+  "homepage": "https://github.com/WalterYOO/dsh-web-search-yuanbao#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WalterYOO/dsh-web-search-yuanbao.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WalterYOO/dsh-web-search-yuanbao/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "web-search",
+    "tencent",
+    "yuanbao"
+  ],
   "main": "lib/index.js",
   "types": "lib/types/index.d.ts",
   "exports": {
